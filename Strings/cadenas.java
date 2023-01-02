@@ -15,8 +15,8 @@ public class cadenas {
             //
 
         String mensaje3 = "Este mensaje posee muchas letras a";
-        int indicePrimeraA = mensaje3.indexOf("a"); // 9
-        int indiceSegundaA = mensaje3.indexOf("a", indicePrimeraA + 1); // 23, el orden de ese metodo es "(indiceInicial, indiceFinal)"
+        int indicePrimeraA = mensaje3.indexOf("a"); // = 9
+        int indiceSegundaA = mensaje3.indexOf("a", indicePrimeraA + 1); // = 23, el orden de ese metodo es "(indiceInicial, indiceFinal)"
         System.out.println();
         
         System.out.println(indicePrimeraA);
@@ -40,11 +40,11 @@ public class cadenas {
         String mensaje5 = "Hola mundo";
         int indiceLetram = mensaje5.indexOf("m"); // = 5
         System.out.println(indiceLetram);
-        int indiceLetraO = mensaje5.indexOf("o");
+        int indiceLetraO = mensaje5.indexOf("o"); // = 1
         int indicesegundaO = mensaje5.indexOf("o", indiceLetraO + 1); // segunda 'o' = 9
         System.out.println(indicesegundaO);
     
-        String subString2 = mensaje5.substring(indiceLetraO, indiceLetraO + 3); // ola
+        String subString2 = mensaje5.substring(indiceLetraO, indiceLetraO + 3); // = ola
         System.out.println(subString2);
             // Muestra tanto la posición de 'm' y 2°'o' aparte de que puedo coger un rango de palabras en el String
 

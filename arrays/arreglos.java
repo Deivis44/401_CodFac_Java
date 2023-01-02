@@ -1,4 +1,6 @@
 package arrays;
+import java.util.Random;
+
 
 public class arreglos {
     public static void main (String[] args) {
@@ -59,21 +61,43 @@ public class arreglos {
         
         // matrices
         int matriz[][] = new int[4][3];
+        Random rand = new Random();
         
         for (int posX = 0; posX < matriz.length; posX++) {
             for (int posY = 0; posY < matriz[posX].length; posY++) {
-                System.out.print(matriz[posX][posY]);
+                System.out.print("[" + (matriz[posX][posY] = rand.nextInt(10)) + "]"); // defino valores aleatorios para una matriz gracias a la linea 2 y 64
             }
+            System.out.println();
         }
         System.out.println();
+
         
-            // matriz declarada de la otra forma y recorrida con foreach
+        // matriz declarada de la otra forma y recorrida con foreach
         int matriz2[][] = {{1,2}, {3,4}};
         
         for (int fila[] : matriz2) {
             for (int celda : fila) {
                 System.out.print(celda);
             }
+            System.out.println();
+        }
+        System.out.println();
+        
+        
+        // arreglos dinamicos
+        int notas[][] = new int[5][];
+
+        notas[0] = new int[1]; // E
+        notas[1] = new int[2]; // A
+        notas[2] = new int[3]; // D
+        notas[3] = new int[4]; // B
+        notas[4] = new int[5]; // C
+        
+        for (int[] califAlumno : notas) { // ya que la matriz tiene columnas distintas para cada fila, no uso un for normal o entraria a un rango que no existe
+            for (int notasF : califAlumno) {
+                System.out.print((notasF = rand.nextInt(8)) + " ");
+            }
+            System.out.println();
         }
     }
 }
