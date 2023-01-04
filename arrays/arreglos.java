@@ -85,7 +85,7 @@ public class arreglos {
         
         
         // arreglos dinamicos
-        int notas[][] = new int[5][];
+        int notas[][] = new int[5][]; // en este caso haremos una matriz con columnas diferentes
 
         notas[0] = new int[1]; // E
         notas[1] = new int[2]; // A
