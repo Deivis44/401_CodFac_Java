@@ -5,7 +5,7 @@ public class principal {
     
         perro luki = new perro(); // instacia = el objeto creado
 
-        luki.establecerAtrib("Juan", "Doverman", 4); // un metodo con parametros necesita argumentos = 3
+        luki.establecerAtrib("Juan", "Doverman", 4); // un metodo con parametros tienen 'argumentos' = 3
         
         /* para definir valores a los atributos
             luki.nombre = "Lucky";
