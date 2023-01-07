@@ -1,9 +1,10 @@
-package POO;
+package POO.perro;
 
 public class principal {
     public static void main(String[] args) {
     
-        perro luki = new perro(); // instacia = el objeto creado
+        perro luki = new perro();  // la primera palabra es el nombre de la clase y la segunda la variable donde se guardan los datos
+        // instacia = el objeto creado
 
         luki.establecerAtrib("Juan", "Doverman", 4); // un metodo con parametros tienen 'argumentos' = 3
         
@@ -11,6 +12,8 @@ public class principal {
             luki.nombre = "Lucky";
             luki.edad = 7;
             luki.raza = "Golden Retriever";
+
+            ? Esta vaina se parece a una estructura 
         */
 
         System.out.println("El nombre es: " + luki.nombre);
@@ -21,5 +24,9 @@ public class principal {
         luki.comer();
         luki.dormir();
         luki.ladrar();
+
+
+        
+
     }
 }
