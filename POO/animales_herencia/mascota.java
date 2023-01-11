@@ -5,6 +5,12 @@ public class mascota {
     public String nombre;
     public String raza;
     public int edad;
+
+    public mascota(String nombre, String raza, int edad) {
+        this.nombre = nombre;
+        this.raza = raza; 
+        this.edad = edad;
+    }
     
     public void dormir() {
         System.out.println("La mascota duerme");
